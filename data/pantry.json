@@ -1,0 +1,16 @@
+[
+    {
+      "id": "1",
+      "name": "Milk",
+      "category": "Dairy",
+      "quantity": 3,
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Bananas",
+      "category": "Produce",
+      "quantity": 5,
+      "userId": "2"
+    }
+  ]
