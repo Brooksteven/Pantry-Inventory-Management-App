@@ -16,6 +16,12 @@
           "category": "Dairy",
           "quantity": 2
         }
+        {
+          "id": "3",
+          "name": "Butter",
+          "category": "Diary",
+          "quantity": 1
+        }
       ]
     },
     {
@@ -25,9 +31,9 @@
       "items": [
         {
           "id": "1",
-          "name": "Bananas",
-          "category": "Produce",
-          "quantity": 5
+          "name": "Duke's Mayonnaise",
+          "category": "Diary",
+          "quantity": 100
         }
       ]
     }
