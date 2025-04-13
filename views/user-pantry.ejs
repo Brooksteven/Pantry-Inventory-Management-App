@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user.name %>'s Pantry</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <h1><%= user.name %>'s Pantry</h1>
+
+  <nav>
+    <a href="/users">Back to Users</a> |
+    <a href="/items">View Pantry Items</a>
+  </nav>
+
+  <% if (items.length === 0) { %>
+    <p>No items found for this user.</p>
+  <% } else { %>
+    <ul>
+      <% items.forEach(item => { %>
+        <li><%= item.name %> - <%= item.category %> - Quantity: <%= item.quantity %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
+
+
+
+
+

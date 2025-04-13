@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brooklynn's Pantry</title>
-    <link rel="stylesheet" href="/public/styles.css" />
-  </head>
-  <body>
-    <h1>Brooklynn's Pantry</h1>
-    <a href="/views/users.ejs">View Users</a>
-    <a href="/views/add-item.ejs">Add New Item</a>
-    <ul>
-      <% items.forEach(item => { %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantry Items</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <h1>Pantry Items</h1>
+  <a href="/users">View Users</a> |
+  <a href="/items/new">Add New Item</a>
+  
+  <ul>
+    <% items.forEach(item => { %>
       <li>
-        <%= item.name %> - <%= item.category %> - <%= item.quantity %>
-        <a href="/views/edit-item.ejs/<%= item.id %>">Edit</a>
-        <form action="/items/<%= item.id %>?_method=DELETE" method="POST" style="display: inline">
+        <%= item.name %> - <%= item.category %> - <%= item.quantity %> 
+        <a href="/items/edit/<%= item.id %>">Edit</a>
+        <form action="/items/<%= item.id %>?_method=DELETE" method="POST" style="display:inline;">
           <button type="submit">Delete</button>
         </form>
       </li>
-      <% }) %>
-    </ul>
-  </body>
+    <% }) %>
+  </ul>
+</body>
 </html>
