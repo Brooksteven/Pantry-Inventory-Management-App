@@ -1,0 +1,34 @@
+[
+    {
+      "id": "1",
+      "name": "Brooklynn",
+      "role": "admin",
+      "items": [
+        {
+          "id": "1",
+          "name": "Milk",
+          "category": "Dairy",
+          "quantity": 3
+        },
+        {
+          "id": "2",
+          "name": "Cheese",
+          "category": "Dairy",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Tishana",
+      "role": "user",
+      "items": [
+        {
+          "id": "1",
+          "name": "Bananas",
+          "category": "Produce",
+          "quantity": 5
+        }
+      ]
+    }
+  ]
