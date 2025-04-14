@@ -13,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //These are also categories I am using for data (5%)
 const itemRoutes = require('./routes/items');
 const userRoutes = require('./routes/users')
+const recipeRoutes = require('./routes/recipes')
 
 //Create and render at least one view using a view template and template engine. Third-party Engine. (8%)
 app.set('view engine', 'ejs');
@@ -32,6 +33,7 @@ app.use(requestTimeMiddleware);
 //Routes
 app.use('/items', itemRoutes);
 app.use('/users', userRoutes);
+app.use('/recipes', recipeRoutes);
 
 //Root Route to redirect to Items/Pantry/Home Page
 //This is the page I want to start on

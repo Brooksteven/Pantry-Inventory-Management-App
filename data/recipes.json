@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Banana Smoothie",
+      "ingredients": "Bananas, Milk, Ice",
+      "href": "#",
+      "thumbnail": ""
+    },
+    {
+      "title": "Cheesy Omelette",
+      "ingredients": "Eggs, Cheese, Milk",
+      "href": "#",
+      "thumbnail": ""
+    },
+    {
+      "title": "Fruit Salad",
+      "ingredients": "Bananas, Apples, Oranges",
+      "href": "#",
+      "thumbnail": ""
+    }
+  ]
+  

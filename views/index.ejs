@@ -9,13 +9,14 @@
 <body>
   <h1>Pantry Items</h1>
   <a href="/users">View Users</a> |
-  <a href="/items/new">Add New Item</a>
+  <a href="/items/new">Add New Item</a> |
+  <a href="/recipes">Find Recipes with Pantry Items</a>
   
   <ul>
     <% items.forEach(item => { %>
       <li>
         <%= item.name %> - <%= item.category %> - <%= item.quantity %> 
-        <a href="/items/edit/<%= item.id %>">Edit</a>
+        <a href="/items/edit/<%= item.id %>">Edit</a> 
         <form action="/items/<%= item.id %>?_method=DELETE" method="POST" style="display:inline;">
           <button type="submit">Delete</button>
         </form>

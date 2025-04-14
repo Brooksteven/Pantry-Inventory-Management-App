@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Ideas</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+  <h1>Recipe Ideas from Pantry</h1>
+  <a href="/items">Back to Pantry</a> |
+  <a href="/users">View Users</a>
+
+  <ul>
+    <% recipes.forEach(recipe => { %>
+      <li>
+        <strong><%= recipe.title %></strong><br>
+        Ingredients: <%= recipe.ingredients %><br>
+        <% if (recipe.href) { %>
+          <a href="<%= recipe.href %>" target="_blank">View Recipe</a>
+        <% } %>
+      </li>
+      <hr>
+    <% }) %>
+  </ul>
+</body>
+</html>
+
+
