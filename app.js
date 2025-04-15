@@ -1,10 +1,10 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-const methodOverride = require('method-override');
+const express = require('express'); //This is the main framework I am using to build the web server
+const path = require('path'); //This is the Node.js utility to help with file paths across systems (Windows, Mac, Linux)
+const app = express(); //
+const methodOverride = require('method-override'); //This allows the HTML forms to support HTTP methods like PUT and DELTE (which forms don't support by default)
 const loggingMiddleware = require('./middleware/loggingMiddleware');
 const requestTimeMiddleware = require('./middleware/requestTimeMiddleware');
-const PORT = 3000
+const PORT = 3000 // this is the port the app will run on locally
 
 // Static file serving
 app.use(express.static(path.join(__dirname, 'public')));
@@ -21,8 +21,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // Middleware
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // here we parse data froom form submissions (like in POST requests)
+app.use(express.json()); 
 app.use(methodOverride('_method')); // Allow PUT/DELETE via query params
 
 //Create and use at least two pieces of custom middleware (5%)
