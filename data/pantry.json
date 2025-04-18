@@ -1,51 +1,63 @@
 [
-    {
-      "id": "1",
-      "name": "Milk",
-      "category": "Dairy",
-      "quantity": 3,
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "name": "Duke's Mayonnaise",
-      "category": "Diary",
-      "quantity": 5,
-      "userId": "2"
-    },
-    {
-        "id": "3",
-        "name": "Banana",
-        "category": "Produce",
-        "quantity": 4,
-        "userId": "1"
-    },
-    {
-        "id": "4",
-        "name": "Eggs",
-        "category": "Diary",
-        "quantity": 4,
-        "userId": "2"
-    },
-    {
-        "id": "5",
-        "name": "Cheese",
-        "category": "Diary",
-        "quantity": 1,
-        "userId": "2"
-    },
-    {
-        "id": "6",
-        "name": "Apples",
-        "category": "Produce",
-        "quantity": 1,
-        "userId": "1"
-    },
-    {
-        "id": "7",
-        "name": "Oranges",
-        "category": "Produce",
-        "quantity": 1,
-        "userId": "1"
-    }
-  ]
+  {
+    "id": "1",
+    "name": "Milk",
+    "category": "Dairy",
+    "quantity": "2",
+    "userId": "1"
+  },
+  {
+    "id": "2",
+    "name": "Duke's Mayonnaise",
+    "category": "Diary",
+    "quantity": 5,
+    "userId": "2"
+  },
+  {
+    "id": "3",
+    "name": "Banana",
+    "category": "Produce",
+    "quantity": 4,
+    "userId": "1"
+  },
+  {
+    "id": "4",
+    "name": "Eggs",
+    "category": "Diary",
+    "quantity": 4,
+    "userId": "2"
+  },
+  {
+    "id": "5",
+    "name": "Cheese",
+    "category": "Diary",
+    "quantity": 1,
+    "userId": "2"
+  },
+  {
+    "id": "6",
+    "name": "Apples",
+    "category": "Produce",
+    "quantity": 1,
+    "userId": "1"
+  },
+  {
+    "id": "7",
+    "name": "Oranges",
+    "category": "Produce",
+    "quantity": 1,
+    "userId": "1"
+  },
+  {
+    "id": "1744768957918",
+    "name": "Bananas",
+    "category": "Frozen",
+    "quantity": "1"
+  },
+  {
+    "id": "1744983155772",
+    "name": "Blueberries",
+    "category": "Produce",
+    "quantity": "3"
+  }
+]

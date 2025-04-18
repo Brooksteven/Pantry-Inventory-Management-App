@@ -79,6 +79,9 @@ router
 router
 .route("/:id")
 .delete((req, res) => {
+    const pantryData = loadPantryData();
+    const updatedPantry = pantryData.filter(item => item.id != req.params.id);
+    savePantryData(updatedPantry);
   res.redirect("/items");
 });
 
